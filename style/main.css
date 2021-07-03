@@ -1,0 +1,98 @@
+/*Declarando variáveis em css*/
+:root{
+  --vermelho: #E50914;
+  --preta: #141414;
+}
+
+/*Resetando o CSS, pois nem todo navegador é igual*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos base*/
+body{
+  background: var(--preta);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row; /*Ela já vem como row por padrão*/
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  margin-left: 8px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 14px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../resources/img/233dc3qWmhiEcsYmqFK4PJoxmnq.jpg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .sinopse {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+  
+  padding: 15px;
+  margin-right: 15px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: #141414;
+}
+
+.botao i {
+  margin: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
